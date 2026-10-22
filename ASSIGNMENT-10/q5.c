@@ -9,7 +9,7 @@ int binarysearch(int a[],int low ,int high,int key)
     return mid;
     else if (key < a[mid]);
     else
-    return binarySearch(a, mid + 1, high, key);
+    return binarysearch(a, mid + 1, high, key);
 }
 int main()
 {
@@ -25,7 +25,7 @@ int main()
     }
     printf("Enter element to search: ");
     scanf("%d", &key);
-result = binarySearch(a, 0, n - 1, key);
+result = binarysearch(a, 0, n - 1, key);
 
     if (result == -1)
         printf("Element not found.");
